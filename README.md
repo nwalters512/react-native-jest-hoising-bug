@@ -4,7 +4,7 @@ Reproduces a bug with the React Native Jest preprocessor.
 
 ## Steps to reproduce
 
-1. Run `yarn` to install depenencies
+1. Run `yarn` to install dependencies.
 2. Run `yarn test`. This will execute the tests defined in `src/index.test.js`.
 3. Observe how the test fails with the exception thrown from `src/example.js`. This is unexpected, since the implementation of that function should be mocked.
 4. Delete `jest.config.js` to turn off the `react-native` preset and use the standard `babel-jest` transformer.
